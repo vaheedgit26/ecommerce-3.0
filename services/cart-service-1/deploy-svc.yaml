@@ -16,6 +16,7 @@ spec:
       - name: cart
         image: hashicorp/http-echo
         args:
+          - "-listen=:8002"
           - "-text=CART SERVICE"
 ---
 apiVersion: v1
@@ -26,5 +27,5 @@ spec:
   selector:
     app: cart
   ports:
-    - port: 80
-      targetPort: 5678
+    - port: 8002
+      targetPort: 8002
