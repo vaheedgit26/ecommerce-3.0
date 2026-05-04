@@ -8,9 +8,9 @@ const awsConfig = {
       },
     }
   },
-  API: {
+  /*API: {
     baseUrl: 'YOUR_API_GATEWAY_URL' // e.g., https://xxxxxxxxxx.execute-api.ap-south-1.amazonaws.com
-  }
+  }*/
 };
 
 export default awsConfig;
