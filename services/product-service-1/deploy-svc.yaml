@@ -16,15 +16,16 @@ spec:
       - name: product
         image: hashicorp/http-echo
         args:
+          - "-listen=:8001"
           - "-text=PRODUCT SERVICE"
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: product
+  name: product-service
 spec:
   selector:
     app: product
   ports:
-    - port: 80
-      targetPort: 5678
+    - port: 8001
+      targetPort: 8001
