@@ -49,7 +49,7 @@ RUN touch /var/run/nginx.pid && \
 # COPY nginx.conf /etc/nginx/nginx.conf
 COPY --from=build /app/build /usr/share/nginx/html
 USER nginx
-EXPOSE 8080
+EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
 
 # FROM nginx:1.24.0
