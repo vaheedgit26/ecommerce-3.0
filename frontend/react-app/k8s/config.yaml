@@ -49,8 +49,8 @@ data:
     
 
 		server {
-			listen       8000;
-			listen       [::]:8000;
+			listen       8080;
+			listen       [::]:8080;
 			server_name  _;
 			root         /usr/share/nginx/html;
 
