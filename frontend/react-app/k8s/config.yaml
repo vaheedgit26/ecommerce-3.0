@@ -42,9 +42,9 @@ data:
 
 		upstream cart-service { server cart-service:8002; }
 
-		#upstream user-service { server user-service:8003; }
+		upstream user-service { server user-service:8003; }
         
-		#upstream order-service { server order-service:8004; }
+		upstream order-service { server order-service:8004; }
         
     
 
