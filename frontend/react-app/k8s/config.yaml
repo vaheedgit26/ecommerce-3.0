@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: frontend
-  namespace: ecommerce
+  #namespace: ecommerce
   labels:
     project: ecommerce
     tier: frontend
